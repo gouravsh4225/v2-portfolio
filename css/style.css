@@ -371,7 +371,15 @@ ul {
   }
   .duration {
     float: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: -0.7rem;
   }
+  .job-title {
+    font-weight: 400;
+    margin-top: 0;
+    font-style: unset;
+  } 
 }
 @media screen and (max-width: 520px) {
   .inner__right-section {
