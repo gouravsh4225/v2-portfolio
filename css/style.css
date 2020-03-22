@@ -1,0 +1,397 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  /* background: rgb(10, 25, 47); */
+  background: #fff;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Start the style here */
+/*  loader Style*/
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.loader {
+  background-color: #242F3F;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  display: flex;
+  justify-content: center;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+/*  Content Styling start*/
+
+.main__container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left__section {
+  width: 50%;
+  position: fixed;
+}
+.left__section .profile__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #185a9d;
+  background-image: linear-gradient(to left top, #43cea2, #185a9d);
+  opacity: 0.5;
+}
+.right__section {
+  width: 50%;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+}
+.inner__right-section,
+.left__inner-section {
+  padding: 3rem;
+}
+.pos-ab {
+  position: absolute;
+  z-index: 1;
+}
+.heading__name {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.heading__pro {
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.heading__social {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 0.5rem;
+  font-family: "Lato", sans-serif;
+}
+.heading__social .social_list {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.profile__image {
+  height: 100vh;
+  background-image: url("../assets/profile__image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.left__inner-heading-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.intro {
+  display: flex;
+  align-items: flex-start;
+}
+.right__section h4 {
+  width: 20%;
+  /* margin: 0 0 20px; */
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: #2a54f5;
+  background-image: -webkit-linear-gradient(45deg, #2a54f5 0%, #33e5bb 100%);
+  background-image: linear-gradient(45deg, #2a54f5 0%, #33e5bb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lato", sans-serif;
+}
+.right__section .intro__content {
+  width: 80%;
+  padding: 0;
+  margin: 0 0 50px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+
+.right__section h4,
+.right__section .intro__content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skill-catergory,
+.job {
+  margin: 13px 0;
+}
+
+.exp-item {
+  margin: 0 0 30px;
+}
+.job {
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.duration {
+  float: right;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.clear {
+  clear: both;
+}
+.job-title {
+  margin-top: -10px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+.intro__content .exp-item .job-desc {
+  padding-left: 1.2rem;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.project__item {
+  margin: 13px 0;
+}
+.project__item .project-title {
+  font-weight: 700;
+}
+.project__item .project__descr {
+  margin: 0;
+  font-weight: 500;
+}
+.resume {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.resume .resume-link {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #2a54f5;
+  background-image: -webkit-linear-gradient(45deg, #2a54f5 0%, #33e5bb 100%);
+  background-image: linear-gradient(45deg, #2a54f5 0%, #33e5bb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-section {
+  position: absolute;
+  bottom: 10%;
+}
+.contact-section .contact-email,
+.contact-section .contact-phone {
+  margin: 1rem 0rem;
+}
+.contact-section .contact-email a,
+.contact-section .contact-phone a {
+  color: #fff;
+  margin-left: 1rem;
+}
+
+/* Media query added there */
+@media screen and (max-width: 260px) {
+  .contact-section .contact-email a,
+  .contact-section .contact-phone a {
+    margin-left: 0.2rem !important;
+  }
+  .intro {
+    display: block;
+  }
+  .right__section h4 {
+    width: 100%;
+    text-align: center;
+  }
+  .right__section .intro__content {
+    width: 100%;
+    margin: 0px;
+  }
+  .skill-catergory,
+  .job {
+    display: flex;
+    flex-direction: column;
+    margin: 13px 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .left__section {
+    width: 100%;
+    position: relative;
+  }
+  .heading__pro {
+    font-size: 1rem;
+  }
+  .heading__social {
+    width: 80%;
+  }
+  .right__section {
+    width: 100%;
+  }
+  .inner__right-section,
+  .left__inner-section {
+    padding: 1rem;
+  }
+  .left,
+  .right {
+    float: none;
+  }
+  .contact-section .contact-email a,
+  .contact-section .contact-phone a {
+    margin-left: 0.5rem;
+  }
+  .left__inner-heading-section {
+    min-height: 91vh;
+  }
+  .intro {
+    display: block;
+  }
+  .right__section h4 {
+    width: 100%;
+    text-align: center;
+  }
+  .right__section .intro__content {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .inner__right-section {
+    padding: 1rem;
+  }
+  .intro {
+    display: block;
+  }
+  .right__section h4 {
+    width: 100%;
+    text-align: center;
+  }
+  .right__section .intro__content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .left__section {
+    width: 100%;
+    position: relative;
+  }
+  .inner__right-section,
+  .left__inner-section {
+    padding: 1.5rem;
+  }
+  .right__section {
+    width: 100%;
+  }
+}
