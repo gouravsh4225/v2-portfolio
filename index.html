@@ -28,17 +28,18 @@
           <div class="profile__image">
             <div class="left__inner-section pos-ab">
               <div class="left__inner-heading-section">
-                <div class="heading__name">Hello, I'm Gourav Sharma</div>
-                <div class="heading__pro">
+                <div class="heading__name" data-cy="left_title">Hello, I'm Gourav Sharma</div>
+                <div class="heading__pro" data-cy="left_heading">
                   I'm a Senior System Engineer based in Gurgaon, India specializing in
                   building exceptional, high-quality websites and applications.
                 </div>
-                <div class="heading__social">
+                <div class="heading__social" data-cy="left_socials_links">
                   <a
                     href="https://twitter.com/GouravS25938222"
                     target="_blank"
                     class="social_list"
                     title="twitter"
+                    data-cy="left_social_link_twitter"
                   >
                     <i class="fa fa-twitter fa-1x"></i>
                   </a>
@@ -47,6 +48,7 @@
                     target="_blank"
                     class="social_list"
                     title="github"
+                    data-cy="left_social_link_github"
                   >
                     <i class="fa fa-github fa-1x"></i
                   ></a>
@@ -55,6 +57,7 @@
                     target="_blank"
                     class="social_list"
                     title="linkedin"
+                    data-cy="left_social_link_linkedin"
                   >
                     <i class="fa fa-linkedin fa-1x"></i
                   ></a>
@@ -63,18 +66,24 @@
                     target="_blank"
                     class="social_list"
                     title="medium"
+                    data-cy="left_social_link_meduim"
                   >
                     <i class="fa fa-medium fa-1x"></i
                   ></a>
                 </div>
-                <div class="contact-section">
+                <div class="contact-section" 
+                data-cy="left_content_section">
                   <div class="contact-email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:gouravsh4225@gmail.com" target="_top">gouravsh4225@gmail.com</a>
+                    <a href="mailto:gouravsh4225@gmail.com" target="_top"
+                    data-cy="left_content_email"
+                    >gouravsh4225@gmail.com</a>
                   </div>
                   <div class="contact-phone">
                     <i class="fa fa-phone-square" aria-hidden="true"></i>
-                    <a href="tel:+919416284225" target="_top">9416284225</a>
+                    <a href="tel:+919416284225" target="_top"
+                    data-cy="left_content_phonenumber"
+                    >9416284225</a>
                   </div>
                 </div>
               </div>
@@ -86,7 +95,7 @@
             <div class="intro">
               <h4 class="intro__heading">Intro</h4>
               <div class="intro__content">
-                <p>
+                <p data-cy="right_content_heading">
                   Hello! I'm <strong>Gourav Sharma </strong> , a Senior System Engineer
                   engineer based in Gurgaon, India who enjoys building things that
                   live on the internet. I develop exceptional websites and web
@@ -100,8 +109,8 @@
               </div>
             </div>
             <div class="intro">
-              <h4 class="intro__heading">Skills</h4>
-              <div class="intro__content">
+              <h4 class="intro__heading" data-cy="right_content_skills">Skills</h4>
+              <div class="intro__content" data-cy="right_content_skills_catergory">
                 <div class="skill-catergory">
                   <strong>Web Pages LANGUAGES : &nbsp;</strong>
                   <span
@@ -123,7 +132,7 @@
             </div>
             <!---Experience section start -->
             <div class="intro">
-              <h4 class="intro__heading">EXPERIENCE</h4>
+              <h4 class="intro__heading" data-cy="right_content_experience">EXPERIENCE</h4>
               <div class="intro__content">
                 <div class="exp-item">
                   <div class="job">
